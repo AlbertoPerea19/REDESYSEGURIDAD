@@ -1,48 +1,80 @@
 <app-navbar></app-navbar>
 <main>
     <div class="left-page">
-      <img src="https://www.oldbookillustrations.com/wp-content/uploads/2017/03/there-lonely.jpg"/>
-      <small>But go there, lonely,<br>
-  At eventide,<br>
-  And hearken, hearken<br>
-  To the lisping tide.<br>
-  </small>
+        <img src="https://www.oldbookillustrations.com/wp-content/uploads/2017/03/there-lonely.jpg"/>
+        <small>But go there, lonely,<br>
+            At eventide,<br>
+            And hearken, hearken<br>
+            To the lisping tide.<br>
+        </small>
     </div>
     <div class="right-page">
-      <h2>[ 1 ]</h2>
-      <h1>Honeynets</h1>
-      <p>
-        En cuanto a todas las cosas que existen en el mundo, unas dependen de nosotros,
-  otras no dependen de nosotros. De nosotros dependen; nuestras opiniones, nuestros
-  movimientos, nuestros deseos, nuestras inclinaciones, nuestras aversiones; en una
-  palabra, todas nuestras acciones.<br>
-  Las cosas que no dependen de nosotros son: el cuerpo, los bienes, la reputación, la
-  honra; en una palabra, todo lo que no es nuestra propia acción.
-  Las cosas que dependen de nosotros son por naturaleza libres, nada puede
-  detenerlas, ni obstaculizarlas; las que no dependen de nosotros son débiles,
-  esclavas, dependientes, sujetas a mil obstáculos y a mil inconvenientes, y
-  enteramente ajenas.<br>
-  Recuerda pues que, si tu crees libres, a las cosas por naturaleza esclavas, y propias,
-  a las que dependen de otro; encontrarás obstáculos a cada paso, estarás afligido,
-  alterado, e increparas a Dios y a los Hombres. En cambio si tu tienes, a lo que te
-  pertenece, como propio y, a lo ajeno como de otro; nunca, nadie, te forzará a hacer lo
-  que no quieres ni te impedirá hacer lo que quieres. No increparás a nadie, ni
-  acusarás a persona alguna; no harás ni la más pequeña cosa, que no desees; nadie,
-  entonces, te hará mal alguno, y no tendrás enemigos, pues nada aceptarás que te
-  sea perjudicial.<br>
-  Aspirando entonces a tan grandes bienes, recuerda que tu no debes trabajar
-  mediocremente para lograrlos, y que, en lo que concierne a las cosas exteriores,
-  debes enteramente renunciar a algunas y diferir otras. Pues si buscas armonizarlas, y
-  ambicionas estos bienes y también riquezas y honores, quizá no obtengas ni siquiera
-  éstos últimos, por desear también los otros; pero con toda seguridad, no obtendrás
-  los únicos bienes con los que logras tu libertad y felicidad.<br>
-  Así, ante toda fantasía perturbadora, está presto a decir: <i>“Tu no eres sino una
-        imaginación, y en absoluto eres lo que parece”</i>, enseguida examínala con atención y
-  ponla a prueba, para ello sírvete de las reglas que tienes, principalmente con esta
-  primera que es, a saber : de si la cosa que te hace penar es del número de aquellas
-  que dependen de nosotros o de aquellas que no están en nuestro poder. Di sin
-        titubear: <i>“Esa en nada me atañe”.</i>
-      </p>
+        <h1>Honeynets</h1>
+
+        <h2>HoneyNets:</h2>
+        <p>
+            <strong>¿Qué es un HoneyNet?</strong><br>
+            Un HoneyNet es una red de señuelo diseñada para atraer a los atacantes y estudiar sus métodos y tácticas.
+            Es esencialmente un conjunto de sistemas de computadoras que simulan ser una red real, pero están
+            configurados con el propósito de atraer y detectar actividades maliciosas.
+        </p>
+        <p>
+            <strong>¿Cómo funciona un HoneyNet?</strong><br>
+            Los HoneyNets funcionan atrayendo a los atacantes mediante la creación de servicios y recursos que
+            parecen ser valiosos y vulnerables. Estos pueden incluir servidores web, bases de datos, sistemas
+            operativos desactualizados, entre otros. Cuando un atacante intenta comprometer estos sistemas, el
+            HoneyNet registra sus acciones para su análisis.
+        </p>
+        <h3>Ventajas de usar HoneyNets:</h3>
+        <ol>
+            <li><strong>Detección temprana:</strong> Al simular una red real, los HoneyNets pueden detectar actividades maliciosas en una etapa temprana antes de que lleguen a la red principal.</li>
+            <li><strong>Recopilación de datos:</strong> Permiten recopilar información valiosa sobre las tácticas y herramientas utilizadas por los atacantes, lo que puede ser útil para fortalecer la seguridad de la red principal.</li>
+            <li><strong>Aprendizaje de amenazas:</strong> Ayudan a comprender las amenazas emergentes y las tácticas empleadas por los atacantes, lo que permite mejorar las medidas de seguridad.</li>
+        </ol>
+
+        <h3>Ejemplo de implementación de un HoneyNet:</h3>
+        <p>
+            Supongamos que una organización configura un HoneyNet simulando una red interna con servicios como un
+            servidor FTP, un servidor web y bases de datos desactualizadas. Un atacante intenta explotar las
+            vulnerabilidades aparentes en estos servicios. El HoneyNet registra cada interacción del atacante,
+            incluyendo los comandos utilizados, los archivos descargados y cualquier intento de movimientos
+            laterales. Esta información es valiosa para entender las tácticas del atacante y tomar medidas
+            correctivas en la red principal.
+        </p>
+
+        <h3>Información extra</h3>
+        <ol>
+            <li><strong>Tipos de HoneyNets:</strong>
+                <ul>
+                    <li><strong>Low-Interaction Honeypots:</strong> Simulan servicios y sistemas operativos a un nivel básico. Son menos riesgosos ya que no permiten una interacción profunda, pero también ofrecen menos información.</li>
+                    <li><strong>High-Interaction Honeypots:</strong> Emulan entornos más realistas y permiten una interacción más profunda. Estos sistemas pueden ser más riesgosos ya que exponen una mayor superficie de ataque, pero también proporcionan información más detallada sobre las tácticas de los atacantes.</li>
+                </ul>
+            </li>
+            <li><strong>Despliegue Estratégico:</strong>
+                <ul>
+                    <li><strong>Dentro o Fuera de la Red:</strong> Pueden implementarse dentro de la red (para detectar amenazas internas) o fuera de la red (para detectar amenazas externas). La elección depende de los objetivos de seguridad de la organización.</li>
+                    <li><strong>Near o Far Honeypots:</strong> Los primeros están en la misma red que los activos reales, mientras que los segundos están en una red separada. Near Honeypots ofrecen una visión más cercana a las amenazas internas, mientras que Far Honeypots se centran en amenazas externas.</li>
+                </ul>
+            </li>
+            <li><strong>Recolección de Datos:</strong>
+                <ul>
+                    <li><strong>Logs y Firmas:</strong> Los HoneyNets registran todas las interacciones, desde intentos de inicio de sesión hasta comandos ejecutados. También pueden generar firmas que pueden utilizarse para mejorar los sistemas de detección de intrusos.</li>
+                    <li><strong>Captura de Paquetes:</strong> Algunos HoneyNets capturan tráfico de red para un análisis más profundo. Esto ayuda a identificar patrones de comportamiento y posibles amenazas.</li>
+                </ul>
+            </li>
+            <li><strong>Análisis y Respuesta:</strong>
+                <ul>
+                    <li><strong>Análisis Forense:</strong> La información recopilada se utiliza para realizar análisis forenses y entender cómo los atacantes intentan explotar sistemas.</li>
+                    <li><strong>Adaptación de Medidas de Seguridad:</strong> Basándose en las tácticas de los atacantes, las organizaciones pueden mejorar sus medidas de seguridad, parchear vulnerabilidades y ajustar configuraciones.</li>
+                </ul>
+            </li>
+            <li><strong>Desafíos y Consideraciones:</strong>
+                <ul>
+                    <li><strong>Falsos Positivos y Falsos Negativos:</strong> Es importante distinguir entre actividades maliciosas y acciones legítimas que pueden parecer sospechosas. Además, algunos atacantes pueden identificar HoneyNets y evadirlos.</li>
+                    <li><strong>Gestión de Riesgos:</strong> El despliegue de HoneyNets conlleva riesgos. Si no se gestionan adecuadamente, podrían ser utilizados por los atacantes para lanzar ataques a la red principal.</li>
+                </ul>
+            </li>
+        </ol>
     </div>
 </main>
 <app-footer></app-footer>
